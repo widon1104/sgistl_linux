@@ -28,7 +28,7 @@
  *   You should not attempt to use it directly.
  */
 
-#include <concept_checks.h>
+#include "concept_checks.h"
 
 #ifndef __SGI_STL_INTERNAL_DEQUE_H
 #define __SGI_STL_INTERNAL_DEQUE_H
@@ -448,8 +448,8 @@ public:                         // Iterators
   typedef typename _Base::const_iterator const_iterator;
 
 #ifdef __STL_CLASS_PARTIAL_SPECIALIZATION
-  typedef reverse_iterator<const_iterator> const_reverse_iterator;
-  typedef reverse_iterator<iterator> reverse_iterator;
+  typedef sgistd::reverse_iterator<const_iterator> const_reverse_iterator;
+  typedef sgistd::reverse_iterator<iterator> reverse_iterator;
 #else /* __STL_CLASS_PARTIAL_SPECIALIZATION */
   typedef reverse_iterator<const_iterator, value_type, const_reference, 
                            difference_type>  

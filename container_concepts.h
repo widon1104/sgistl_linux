@@ -15,7 +15,7 @@
 #define __STL_CONTAINER_CONCEPTS_H
 
 
-#include <concept_checks.h>
+#include "concept_checks.h"
 
 #ifdef __STL_USE_CONCEPT_CHECKS
 
@@ -208,12 +208,12 @@ _const_ReversibleContainer_requirement_violation(_ReversibleContainer __c) {
   _ERROR_IN_STL_CONTAINER::__rbegin_iterator_accessor_requirement_violation(__c);
   _ERROR_IN_STL_CONTAINER::__rend_iterator_accessor_requirement_violation(__c);
   // Requirements on Iterators
-  typedef typename _ReversibleContainer::iterator iter;
-  typedef typename _ReversibleContainer::const_iterator const_iter;
+  //typedef typename _ReversibleContainer::iterator iter;
+  //typedef typename _ReversibleContainer::const_iterator const_iter;
   
   // This line won't compile on gcc 2.91 due to a compiler bug.
 #if !(__GNUC__ == 2 && __GNUC_MINOR__ == 91)
-  __BidirectionalIterator_concept_specification<const_iter>::_BidirectionalIterator_requirement_violation(const_iter());
+  //__BidirectionalIterator_concept_specification<const_iter>::_BidirectionalIterator_requirement_violation(const_iter());
 #endif
 }
 };

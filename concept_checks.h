@@ -259,7 +259,7 @@ template <class _TypeX, class _TypeY>
 struct _STL_SAME_TYPE_ERROR {
   static void
   __type_X_not_same_as_type_Y(_TypeX , _TypeY ) { 
-    __check_equal<_TypeX> t1 = __check_equal<_TypeY>();
+    //__check_equal<_TypeX> t1 = __check_equal<_TypeY>();
   }
 };
 
@@ -567,9 +567,9 @@ template <class _TrivialIterator>
 struct _TrivialIterator_concept_specification {
 static void
 _TrivialIterator_requirement_violation(_TrivialIterator __i) {
-  typedef typename
-    __value_type_type_definition_requirement_violation<_TrivialIterator>::
-    value_type __T;
+//  typedef typename
+ //   __value_type_type_definition_requirement_violation<_TrivialIterator>::
+  //  value_type __T;
   // Refinement of Assignable
   _Assignable_concept_specification<_TrivialIterator>::
     _Assignable_requirement_violation(__i);
@@ -796,7 +796,7 @@ _Allocator_requirement_violation(_Alloc __a) {
   __const_reference__typedef_requirement_violation<_Alloc>();
   __pointer__typedef_requirement_violation<_Alloc>();
   __const_pointer__typedef_requirement_violation<_Alloc>();
-  typedef typename _Alloc::value_type _Tp;
+  //typedef typename _Alloc::value_type _Tp;
   //__STL_REQUIRES_SAME_TYPE(typename _Alloc::__STL_TEMPLATE rebind<_Tp>::other,
   //                         _Alloc);
 }

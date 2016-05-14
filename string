@@ -2019,7 +2019,7 @@ inline void swap(basic_string<_CharT,_Traits,_Alloc>& __x,
 
 #ifndef __STL_USE_NEW_IOSTREAMS 
 __STL_END_NAMESPACE
-#include <iostream.h>
+#include <iostream>
 __STL_BEGIN_NAMESPACE
 #endif /* __STL_USE_NEW_IOSTREAMS */
 
