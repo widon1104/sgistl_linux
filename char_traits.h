@@ -30,8 +30,8 @@ public:
   typedef _CharT char_type;
   typedef _IntT int_type;
 #ifdef __STL_USE_NEW_IOSTREAMS
-  typedef streamoff off_type;
-  typedef streampos pos_type;
+  typedef std::streamoff off_type;
+  typedef std::streampos pos_type;
   typedef mbstate_t state_type;
 #endif /* __STL_USE_NEW_IOSTREAMS */
 

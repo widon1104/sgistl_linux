@@ -15,12 +15,12 @@
 #ifndef __SGI_STL_MEMORY
 #define __SGI_STL_MEMORY
 
-#include <stl_algobase.h>
-#include <stl_alloc.h>
-#include <stl_construct.h>
-#include <stl_tempbuf.h>
-#include <stl_uninitialized.h>
-#include <stl_raw_storage_iter.h>
+#include "stl_algobase.h"
+#include "stl_alloc.h"
+#include "stl_construct.h"
+#include "stl_tempbuf.h"
+#include "stl_uninitialized.h"
+#include "stl_raw_storage_iter.h"
 
 
 __STL_BEGIN_NAMESPACE

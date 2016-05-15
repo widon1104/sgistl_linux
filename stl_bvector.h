@@ -387,8 +387,8 @@ public:
   typedef _Bit_const_iterator          const_iterator;
 
 #ifdef __STL_CLASS_PARTIAL_SPECIALIZATION
-  typedef sgistd::reverse_iterator<const_iterator> const_reverse_iterator;
-  typedef sgistd::reverse_iterator<iterator> reverse_iterator;
+  typedef __STD::reverse_iterator<const_iterator> const_reverse_iterator;
+  typedef __STD::reverse_iterator<iterator> reverse_iterator;
 #else /* __STL_CLASS_PARTIAL_SPECIALIZATION */
   typedef reverse_iterator<const_iterator, value_type, const_reference, 
                            difference_type> const_reverse_iterator;

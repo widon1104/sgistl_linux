@@ -14,12 +14,12 @@
 #ifndef __SGI_STDEXCEPT
 #define __SGI_STDEXCEPT
 
-#include <stl_exception.h>
+#include "stl_exception.h"
 
 #if defined(__STL_USE_EXCEPTIONS) || \
     !(defined(_MIPS_SIM) && defined(_ABIO32) && _MIPS_SIM == _ABIO32)
 
-#include <stl_string_fwd.h>
+#include "stl_string_fwd.h"
 
 __STL_BEGIN_NAMESPACE
 

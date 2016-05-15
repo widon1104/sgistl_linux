@@ -493,7 +493,7 @@
 // edit library headers.
 # if defined(__STL_HAS_NAMESPACES) && !defined(__STL_NO_NAMESPACES)
 #   define __STL_USE_NAMESPACES
-#   define __STD std
+#   define __STD sgistd
 #   define __STL_BEGIN_NAMESPACE namespace sgistd {
 #   define __STL_END_NAMESPACE }
 #   if defined(__STL_FUNCTION_TMPL_PARTIAL_ORDER) && \
@@ -526,7 +526,7 @@
 // MR version is not expected to have it.
 
 # if defined(__STL_USE_NAMESPACES) && !defined(__STD_QUALIFIER)
-#   define __STD_QUALIFIER std::
+#   define __STD_QUALIFIER sgistd::
 # else
 #   define __STD_QUALIFIER
 # endif

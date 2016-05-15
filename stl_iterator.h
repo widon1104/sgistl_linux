@@ -31,6 +31,8 @@
 #ifndef __SGI_STL_INTERNAL_ITERATOR_H
 #define __SGI_STL_INTERNAL_ITERATOR_H
 
+#include "char_traits.h"
+
 __STL_BEGIN_NAMESPACE
 
 template <class _Container>
